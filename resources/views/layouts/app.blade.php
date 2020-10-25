@@ -36,6 +36,19 @@
             @section('main-nav')
         </header>
 
+        @if($errors->any()){
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors as $error){
+                        <li>{{ $error->message}} </li>
+                    }
+                @endforeach
+                </ul>
+            </div>
+            
+        }
+        @endif
+
         <main role="main" class="flex-shrink-0 container-margin-top">
             @section('content')
         </main>
