@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('title', 'Mailr')
+@section('content')
+    <div class="container">
+        <h3>Free mail sender</h3>
+        <p>
+            Hey, Welcome to this mail sender
+        </p>
+        <span><a href="/compose-email">Send New Email</a></span>
+    </div>
+@show
 
-        <title>{{$appname}}</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body class="antialiased">
-        <div class="container">
-            <h3>Free mail sender</h3>
-            <p>
-                Hey, Welcome to this mail sender
-            </p>
-
-            <span><a href="/compose-email">Send New Email</a></span>
-        </div>
-        
-    </body>
-</html>

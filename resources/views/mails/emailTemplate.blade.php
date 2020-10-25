@@ -6,5 +6,5 @@ Hello **{{$title}}**,  {{-- line break --}}
 Join Owino on Github
 @endcomponent
 Sincerely,  
-Samuel Owino, Accenture Dev.
+{{ $username}}
 @endcomponent
